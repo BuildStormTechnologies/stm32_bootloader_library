@@ -78,6 +78,11 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   
   <!-- Custom Application example -->
 ## Custom Application Example
-Use the f407_app project to build the custom application. It uses the precompiled libaray objectject which can be linked with user application.
+Use the f407_app project to build the custom application. It uses the pre-compiled library object which will be linked with user application.
 
 
+![image](images/stm32_includes.png)
+
+![image](images/stm32_library_path.png)
+
+![image](images/stm32_post_build.png)
