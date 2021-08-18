@@ -108,7 +108,7 @@ Use the f407_app project to build the custom application. It uses the pre-compil
   }
   ````
 - ### Include Libraries
-  Inculded the **utils** folder containing the library header files to the project. 
+  Inculde the **utils** folder containing the library header files to the project. 
   ![image](images/stm32_includes.png)
   
 - ### Include Object file
@@ -120,7 +120,7 @@ Use the f407_app project to build the custom application. It uses the pre-compil
   ![image](images/stm32_post_build.png)
   
 - ### Application Binary
-  The final application binary will be generated in Debug folder with the **projectName_release.bin**. This file can be used for Serial/OTA firmware updates.
+  The final encrypted application binary will be generated in Debug folder as **projectName_release.bin**. This file can be used for Serial/OTA firmware updates.
 
 
 
