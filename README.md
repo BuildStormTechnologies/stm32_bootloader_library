@@ -49,7 +49,10 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
    * The bootloader binary is available in *.\binaries* folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
    * For testing, two application binaries are available in *.\binaries* folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
    ````    
-     flash all <application file path>  This will flash the bootloader from .\binaries\bootloader.bin and application from the specified path.
+     flash all <application file path>  This will flash the bootloader from .\binaries\bootloader.bin and 
+                                        the application from the specified path.
+   ```` 
+   ```` 
      flash app <application file path> This will only flash the application from the specified path.
    ````
  5. Flash Bootloader and Application
