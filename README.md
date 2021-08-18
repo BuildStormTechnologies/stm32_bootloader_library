@@ -18,6 +18,14 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
         <li><a href="#flash-application-only">Flash application only</a></li>
       </ul>
     <li><a href="#custom-application-example">Custom Application Example</a></li>
+      <ul>
+        <li><a href="#memory-layout">Memory Layout</a></li>
+        <li><a href="#linker-settings">Linker Settings</a></li>
+        <li><a href="#include-libraries">Include Libraries</a></li>
+        <li><a href="#include-object-file">Include Object file</a></li>
+        <li><a href="#post-build-script">Post build script</a></li>
+        <li><a href="#application-binary">Application Binary</a></li>        
+      </ul>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -80,7 +88,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 ## Custom Application Example
 Use the f407_app project to build the custom application. It uses the pre-compiled library object which will be linked with user application.
 
-- Memory Layout
+- ###Memory Layout
 
 | Type | Address |	size	| No of Sectors |	Sector index |
 | :---: | :---: | :---: | :---: | :---: |
@@ -89,15 +97,33 @@ Use the f407_app project to build the custom application. It uses the pre-compil
 | Application	| 0x08010000 |	448KB |	4 |	4 - 7 |
 | Temporary Download Partition	| 0x08070000 |	512KB |	4 |	8 - 11 |
 
-- Linker Settings
-- Include Libraries
-- Include Object file
-- Post build script
-- Application Binary
+- ###Linker Settings
+  Application resides at 0x08010000 and same has to be configured in the linker settings as shown below.
+  ````
+  MEMORY
+  {
+   CCMRAM    (xrw)    : ORIGIN = 0x10000000,   LENGTH = 64K
+   RAM    (xrw)    : ORIGIN = 0x20000000,   LENGTH = 128K
+   FLASH    (rx)    : ORIGIN = 0x8010000,   LENGTH = 448K
+  }
+  ````
+- ###Include Libraries
+  Inculded the **utils** folder containing the library header files to the project. 
+  ![image](images/stm32_includes.png)
+  
+- ###Include Object file
+  Include the precompiled object file to the project.
+  ![image](images/stm32_library_path.png)
+  
+- ###Post build script
+  The final application binary file will be encrypted using executable script(BS_ENCRYPT.exe). It has to added to project settings.
+  ![image](images/stm32_post_build.png)
+  
+- ###Application Binary
+  The final application binary will be generated in Debug folder with the **projectName_release.bin**. This file can be used for Serial/OTA firmware updates.
 
 
-![image](images/stm32_includes.png)
 
-![image](images/stm32_library_path.png)
 
-![image](images/stm32_post_build.png)
+
+
