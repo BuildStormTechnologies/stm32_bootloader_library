@@ -15,7 +15,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
     <li><a href="#cli-tool-for-updating-firmware">CLI tool for updating firmware</a></li>
       <ul>
         <li><a href="#flash-bootloader-and-application">Flash Bootloader and Application</a></li>
-        <li><a href="#update-new-firmware">Flash application only</a></li>
+        <li><a href="#flash-application-only">Flash application only</a></li>
       </ul>
     <li><a href="#custom-application-example">Custom Application Example</a></li>
     <li><a href="#license">License</a></li>
@@ -68,7 +68,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
      * After successful update of the firmware, device will print the versions numbers. Notice the version number and LED pattern.
 
 
-  6. #### Update new firmware
+  6. #### Flash application only
      * In the previous section we have flashed bootloader and application v200, this time only application needs to be flashed
      ````  
      flash app .\binaries\application_v201.bin
