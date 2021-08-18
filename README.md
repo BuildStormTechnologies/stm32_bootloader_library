@@ -82,6 +82,7 @@ Use the f407_app project to build the custom application. It uses the pre-compil
 
 - Memory Layout
 | Type | Address |	size	| No of Sectors |	Sector index |
+| :---: | :---: | :---: | :---: | :---: |
 | Bootloader |	0x08000000 | 14KB	| 1	| 0 |
 | Bootloader | Config |	0x08001000 |	16KB |	1 |	1 |
 | Application	| 0x08010000 |	448KB |	4 |	4 - 7 |
