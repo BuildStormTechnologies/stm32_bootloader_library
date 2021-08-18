@@ -38,9 +38,9 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 1. Connect the device to the PC and note down the COM port from the device manager. 
 2. Open the command line from the project root folder and run the below command
   ```` sh
-  node tracker.js <COMxx>
+  stm32UpdateTool-win.exe <COMxx>
   ```` 
-3. Use the below commands for flashing and registering the device.
+3. Use the below commands for flashing teh bootloader and application.
   ```` 
      1. clear                           // clear screen
      2. device info                     // Print Device info
