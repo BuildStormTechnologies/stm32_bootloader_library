@@ -59,7 +59,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
    ```` 
     flash app <application file path>  This will only flash the application from the specified path.
    ````
- 5. ### Flash Bootloader and Application
+ 5. #### Flash Bootloader and Application
      * Flash both bootloader and application using the flash all command as shown below.
      ````  
      flash all .\binaries\application_v200.bin
