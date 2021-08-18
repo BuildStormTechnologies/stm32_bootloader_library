@@ -14,8 +14,8 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
     </li>
     <li><a href="#cli-tool-for-updating-firmware">CLI tool for updating firmware</a></li>
       <ul>
-        <li><a href="#flash-bootloader-and-application">Flash Bootloader and Application</a></li>
-        <li><a href="#update-new-firmware">Flash application only</a></li>
+        <li><a href="flash-bootloader-and-application">Flash Bootloader and Application</a></li>
+        <li><a href="update-new-firmware">Flash application only</a></li>
       </ul>
     <li><a href="#custom-application-example">Custom Application Example</a></li>
     <li><a href="#license">License</a></li>
