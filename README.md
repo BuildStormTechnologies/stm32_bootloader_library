@@ -42,7 +42,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   ```` sh
   stm32UpdateTool-win.exe <COMxx>
   ```` 
-3. Use the below commands for flashing teh bootloader and application.
+3. Use the below commands for flashing the bootloader and application.
   ![image](images/stm32_tool_info.png)
   
 4. Testing Bootloader
