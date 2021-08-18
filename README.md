@@ -123,7 +123,7 @@ Use the f407_app project to build the custom application. It uses the pre-compil
   The final encrypted application binary will be generated in Debug folder as **projectName_release.bin**. This file can be used for Serial/OTA firmware updates.
 
 ## Demo Video
-[![Demo video](images/demo_video.png)](https://www.youtube.com/watch?v=72F-pH-cGEE)
+[![Demo video](images/video_demo.PNG)](https://www.youtube.com/watch?v=72F-pH-cGEE)
 
 
 
