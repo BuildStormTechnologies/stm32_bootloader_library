@@ -43,27 +43,16 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   stm32UpdateTool-win.exe <COMxx>
   ```` 
 3. Use the below commands for flashing teh bootloader and application.
-  ```` 
-     1. clear                           // clear screen
-     2. device info                     // Print Device info
-     3. device reset                    // Reset/Reboot Device info
-     4. flash all <application.bin>     // flash bootloader+application
-     5. flash bootloader                // flash bootloader
-     6. flash app <application.bin>     // flash application
-     7. flash erase_all                 // Erase chip
-     8. flash erase_sector <sector_num> // Erase a sector
-     9. logs enable                     // Enable device logs
-    10. logs disable                    // Disable device logs
-    11. help                            // Show supported commands
-  ```` 
-  4. Testing Bootloader
-     * The bootloader binary is available in *.\binaries* folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
-     * For testing, two application binaries are available in *.\binaries* folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
+  ![image](images/stm32_tool_info.png)
+  
+4. Testing Bootloader
+   * The bootloader binary is available in *.\binaries* folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
+   * For testing, two application binaries are available in *.\binaries* folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
    ````    
      flash all <application file path>  This will flash the bootloader from .\binaries\bootloader.bin and application from the specified path.
      flash app <application file path> This will only flash the application from the specified path.
    ````
-  5. Flash Bootloader and Application
+ 5. Flash Bootloader and Application
      * Flash both bootloader and application using the flash all command as shown below.
     flash all .\binaries\application_v200.bin
      * CLI will takes care of flashing the bootloader and application one after the other.
