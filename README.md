@@ -88,7 +88,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 ## Custom Application Example
 Use the f407_app project to build the custom application. It uses the pre-compiled library object which will be linked with user application.
 
-- ### Memory Layout
+- #### Memory Layout
 
 | Type | Address |	size	| No of Sectors |	Sector index |
 | :---: | :---: | :---: | :---: | :---: |
@@ -97,7 +97,7 @@ Use the f407_app project to build the custom application. It uses the pre-compil
 | Application	| 0x08010000 |	448KB |	4 |	4 - 7 |
 | Temporary Download Partition	| 0x08070000 |	512KB |	4 |	8 - 11 |
 
-- ### Linker Settings
+- #### Linker Settings
   Application resides at 0x08010000 and same has to be configured in the linker settings as shown below.
   ````
   MEMORY
@@ -107,19 +107,19 @@ Use the f407_app project to build the custom application. It uses the pre-compil
    FLASH    (rx)    : ORIGIN = 0x8010000,   LENGTH = 448K
   }
   ````
-- ### Include Libraries
+- #### Include Libraries
   Inculde the **utils** folder containing the library header files to the project. 
   ![image](images/stm32_includes.png)
   
-- ### Include Object file
+- #### Include Object file
   Include the precompiled object file to the project.
   ![image](images/stm32_library_path.png)
   
-- ### Post build script
+- #### Post build script
   The final application binary file will be encrypted using executable script(BS_ENCRYPT.exe). It has to added to project settings.
   ![image](images/stm32_post_build.png)
   
-- ### Application Binary
+- #### Application Binary
   The final encrypted application binary will be generated in Debug folder as **projectName_release.bin**. This file can be used for Serial/OTA firmware updates.
 
 
