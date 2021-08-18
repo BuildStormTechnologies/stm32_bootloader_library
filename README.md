@@ -78,6 +78,6 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   
   <!-- Custom Application example -->
 ## Custom Application Example
-After successfull device registeration the certificates are stored in the respective thing folders at <b>root/certificates/thingID</b> 
+Use the f407_app project to build the custom application. It uses the precompiled libaray objectject which can be linked with user application.
 
 
