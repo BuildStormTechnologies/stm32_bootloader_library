@@ -12,7 +12,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#CLI tool">CLI tool for updating firmware</a></li>
+    <li><a href="#CLI">CLI tool for updating firmware</a></li>
     <li><a href="#CLI tool for updating firmware">Usage</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -34,7 +34,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 * [Stlink utillity and drivers](https://github.com/SaheblalBagwan/stlink-utility-and-drivers)
 
 
-<!-- CLI tool -->
+<!-- CLI -->
 ## CLI tool for updating firmware
 1. Connect the device to the PC and note down the COM port from the device manager. 
 2. Open the command line from the project root folder and run the below command
