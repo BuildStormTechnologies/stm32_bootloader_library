@@ -46,10 +46,10 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   ```` sh
   stm32UpdateTool-win.exe <COMxx>
   ```` 
-3. Use the below commands for flashing the bootloader and application.
+4. Use the below commands for flashing the bootloader and application.
   ![image](images/stm32_tool_info.png)
   
-4. **Testing Bootloader**
+5. **Testing Bootloader**
    * The bootloader binary is available in **.\binaries** folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
    * For testing, two application binaries are available in **.\binaries** folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
    ````    
@@ -59,7 +59,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
    ```` 
     flash app <application file path>  This will only flash the application from the specified path.
    ````
- 5. #### Flash Bootloader and Application
+ 6. #### Flash Bootloader and Application
      * Flash both bootloader and application using the flash all command as shown below.
      ````  
      flash all .\binaries\application_v200.bin
@@ -68,7 +68,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
      * After successful update of the firmware, device will print the versions numbers. Notice the version number and LED pattern.
 
 
-  6. #### Flash application only
+  7. #### Flash application only
      * In the previous section we have flashed bootloader and application v200, this time lets flash only the new application firmware v201.
      ````  
      flash app .\binaries\application_v201.bin
@@ -79,6 +79,13 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   <!-- Custom Application example -->
 ## Custom Application Example
 Use the f407_app project to build the custom application. It uses the pre-compiled library object which will be linked with user application.
+
+- Memory Layout
+- Linker Settings
+- Include Libraries
+- Include Object file
+- Post build script
+- Application Binary
 
 
 ![image](images/stm32_includes.png)
