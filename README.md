@@ -46,8 +46,8 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
   ![image](images/stm32_tool_info.png)
   
 4. Testing Bootloader
-   * The bootloader binary is available in *.\binaries* folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
-   * For testing, two application binaries are available in *.\binaries* folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
+   * The bootloader binary is available in **.\binaries** folder and same is hardcoded in the CLI tool. For flashing the bootloader, user need not provide the path. 
+   * For testing, two application binaries are available in **.\binaries** folder. The required application binary file path has to be provided for flashing the application. CLI also allows to flash the custom application by providing the absolute path to the below commands.
    ````    
     flash all <application file path>  This will flash the bootloader from .\binaries\bootloader.bin and* 
                                        the application from the specified path.*
@@ -57,9 +57,19 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
    ````
  5. Flash Bootloader and Application
      * Flash both bootloader and application using the flash all command as shown below.
-    flash all .\binaries\application_v200.bin
+     ````  
+     flash all .\binaries\application_v200.bin
+     ````  
      * CLI will takes care of flashing the bootloader and application one after the other.
      * After successful update of the firmware, device will print the versions numbers. Notice the version number and LED pattern.
+
+
+  6. Update new firmware
+     * In the previous section we have flashed bootloader and application v200, this time only application needs to be flashed
+     ````  
+     flash app .\binaries\application_v201.bin
+     ````  
+     * After successful update, notice the change in firmware version and LED pattern.
      
   
   <!-- Custom Application example -->
