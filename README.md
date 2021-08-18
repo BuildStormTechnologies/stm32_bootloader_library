@@ -26,7 +26,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
         <li><a href="#post-build-script">Post build script</a></li>
         <li><a href="#application-binary">Application Binary</a></li>        
       </ul>
-    <li><a href="#license">License</a></li>
+    <li><a href="#demo-video">Demo Video</a></li>
   </ol>
 </details>
 
