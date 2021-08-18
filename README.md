@@ -69,7 +69,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 
 
   6. #### Flash application only
-     * In the previous section we have flashed bootloader and application v200, this time lets flash only the new application fimrware v201.
+     * In the previous section we have flashed bootloader and application v200, this time lets flash only the new application firmware v201.
      ````  
      flash app .\binaries\application_v201.bin
      ````  
