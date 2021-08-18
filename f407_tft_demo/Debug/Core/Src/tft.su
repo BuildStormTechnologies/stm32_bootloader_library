@@ -1,0 +1,10 @@
+tft.c:17:12:display	4	static
+tft.c:22:6:tft_init	48	static
+tft.c:33:6:tft_drawRectangle	40	static
+tft.c:38:6:tft_fillRectangle	40	static
+tft.c:43:6:tft_print	72	static
+tft.c:53:6:tft_printCenter	80	static
+tft.c:66:13:tft_header	24	static
+tft.c:85:6:tft_displayCounter	80	static
+tft.c:92:6:tft_displayProgress	72	static
+tft.c:152:6:tft_welcomeScreen	80	static
