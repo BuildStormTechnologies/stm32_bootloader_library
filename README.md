@@ -13,6 +13,10 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
       </ul>
     </li>
     <li><a href="#cli-tool-for-updating-firmware">CLI tool for updating firmware</a></li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
     <li><a href="#custom-application-example">Custom Application Example</a></li>
     <li><a href="#license">License</a></li>
   </ol>
