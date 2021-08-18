@@ -12,7 +12,8 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#CLI tool for updating firmware">Usage</a></li>
+    <li><a href="#CLI tool for updating firmware">Usage</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -34,7 +35,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## CLI tool for updating firmware
 1. Connect the device to the PC and note down the COM port from the device manager. 
 2. Open the command line from the project root folder and run the below command
   ```` sh
