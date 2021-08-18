@@ -81,6 +81,12 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 Use the f407_app project to build the custom application. It uses the pre-compiled library object which will be linked with user application.
 
 - Memory Layout
+| Type | Address |	size	| No of Sectors |	Sector index |
+| Bootloader |	0x08000000 | 14KB	| 1	| 0 |
+| Bootloader | Config |	0x08001000 |	16KB |	1 |	1 |
+| Application	| 0x08010000 |	448KB |	4 |	4 - 7 |
+| Temporary Download Partition	| 0x08070000 |	512KB |	4 |	8 - 11 |
+
 - Linker Settings
 - Include Libraries
 - Include Object file
