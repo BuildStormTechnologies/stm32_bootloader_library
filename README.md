@@ -26,7 +26,7 @@ Bootloader library and firmware update tool for stm32f4xx series controllers.
 ### Prerequisites
 
 * Install the [Stlink utility and drivers](https://github.com/SaheblalBagwan/stlink-utility-and-drivers) and update the installation path to environment variables <b>C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility</b>.
-* Ensure the bootloader Binary and test application binaries are available <b>root/cli-Tool/binaries</b>
+* Ensure the bootloader binary and test application binaries are available at <b>root/cli-Tool/binaries</b>
 
 ### Installation
 
