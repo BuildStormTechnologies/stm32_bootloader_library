@@ -1,5 +1,5 @@
 # stm32_bootloader_library
-Bootloader library and firmware update tool for stm32f4xx series controllers.
+This bootloader solution allows you to update firmware on STM32 MCUs. It accepts data from serial ports and updates the firmware on the internal flash. The internal flash also has sector allocated to store application specific data. The solution can be customized to meet your specific needs.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
